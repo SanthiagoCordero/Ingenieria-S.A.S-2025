@@ -1,0 +1,115 @@
+/* ===== CHATBOT GLOBAL ===== */
+#chatbot-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  width: 360px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  z-index: 2000;
+  font-family: 'Inter', sans-serif;
+}
+
+#chatbot-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chatbot-messages {
+  padding: 16px;
+  height: 380px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  background: #fafafa;
+}
+
+.message {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.user {
+  margin-left: auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: right;
+}
+
+.bot {
+  background: #fff;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+#chatbot-input {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  background: white;
+}
+
+#chatbot-input input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+#chatbot-input button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+#chatbot-input button:hover {
+  opacity: 0.9;
+}
+
+#chatbot-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2001;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#chatbot-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.5);
+}
+
+.close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
