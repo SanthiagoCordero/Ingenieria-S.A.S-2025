@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia Artificial | Ingenierías S.A.S</title>
+  <link rel="stylesheet" href="../inicio/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .servicio-detalle {
+      position: relative;
+      height: 100vh;
+      background: url("../img/IA.jpg") center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .servicio-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .servicio-info {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .servicio-info h2 {
+      font-size: 48px;
+      color: #29ABE2;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .servicio-info h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .servicio-info p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+    .consulta {
+      background: linear-gradient(90deg, #01002E 0%, #1A0C7C 50%, #3400A8 100%);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .consulta h3 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #29ABE2;
+    }
+
+    .consulta p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn-wsp {
+      background: #29ABE2;
+      color: #01002E;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .btn-wsp:hover {
+      background: #fff;
+      color: #01002E;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .map-container iframe {
+      width: 400px;
+      height: 250px;
+      border-radius: 20px;
+      border: 2px solid #29ABE2;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .footer-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #01002E 0%, #1A0C7C 50%, #3400A8 100%);
+      padding: 40px 60px;
+      border-radius: 60px;
+      color: #fff;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 60px auto 0;
+      max-width: 1100px;
+    }
+
+    .footer-left img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+
+    .footer-center {
+      flex: 1;
+      text-align: center;
+    }
+
+    .footer-center h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .footer-center .cargo {
+      color: #bdbdbd;
+      margin-bottom: 10px;
+    }
+
+    .footer-right p {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      background: #01002E;
+      padding: 15px;
+      color: #ccc;
+      font-size: 13px;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      .servicio-info h2 { font-size: 32px; }
+      .map-container iframe { width: 90%; height: 200px; }
+      .footer-card { flex-direction: column; text-align: center; border-radius: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/BLANCO.png" alt="Logo Empresa">
+      <h1>Ingenierías S.A.S</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="../index.html#servicios-inicio">Servicios</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="servicio-detalle">
+    <div class="servicio-overlay"></div>
+    <div class="servicio-info">
+      <h2>Inteligencia Artificial</h2>
+      <h3>¿Qué ofrecemos?</h3>
+      <p>
+        Desarrollamos sistemas y algoritmos de Inteligencia Artificial que permiten a las máquinas aprender, razonar y tomar decisiones de manera autónoma. 
+        Nuestras soluciones están diseñadas para optimizar procesos, automatizar tareas y mejorar la experiencia del usuario mediante modelos avanzados 
+        de aprendizaje automático y análisis de datos. 
+        Al integrar tecnologías de vanguardia, impulsamos la creación de entornos inteligentes que promueven la eficiencia operativa, la innovación 
+        y la adaptación continua a las necesidades del mercado.
+      </p>
+    </div>
+  </section>
+
+  <section class="consulta">
+    <h3>Consulta con un asesor</h3>
+    <p>¡Estamos aquí para ayudarte! Contáctanos y descubre cómo la inteligencia artificial puede transformar tu empresa.</p>
+    <a href="https://wa.me/+573203685345" target="_blank" class="btn-wsp">💬 WhatsApp</a>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=4.673000,-74.050600&hl=es;z=14&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer-card">
+    <div class="footer-left">
+      <img src="../img/BLANCO.png" alt="Logo Ingenierías S.A.S">
+    </div>
+    <div class="footer-center">
+      <h3>FERNANDO BENAVIDES</h3>
+      <p class="cargo">Gerencia</p>
+      <p>📧 tecnologias@ingenieriassas.com</p>
+    </div>
+    <div class="footer-right">
+      <p>📞 +57 324 6858352 - 300 838 5318</p>
+      <p>🌐 www.ingenieriassas.com</p>
+      <p>🏢 Calle 169 No. 45A-96</p>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    © 2025 Ingenierías S.A.S - Todos los derechos reservados
+  </div>
+
+  <!-- Chatbot -->
+  <div id="chatbot-placeholder"></div>
+  <link rel="stylesheet" href="../chatbot/chatbot.css">
+  <script src="../chatbot/chatbot.js"></script>
+</body>
+</html>
